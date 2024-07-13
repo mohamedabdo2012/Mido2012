@@ -73,7 +73,7 @@ body {
 
 .header .container .iconDiv #centerLine {
     width: 50%;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .header .container .menuDiv:hover #centerLine {
@@ -115,7 +115,7 @@ body {
 }
 
 .header .container .menuDiv ul .divider {
-    border-bottom: 1px solid var(--main-color);
+    border-bottom: 1px solid #676464;
 }
 
 .header .container .menuDiv:hover ul {
@@ -129,7 +129,7 @@ body {
 .landing {
     width: 100vw;
     height: 100vh;
-    background-image: url(image/coding.jpg);
+    background-image: url(images/coding.jpg);
     background-size: cover;
     position: relative;
 }
@@ -169,11 +169,11 @@ body {
 .landing .container .centerDiv button {
     padding: 20px 40px;
     font-size: 25px;
-    background-color: var(--secondary-color);
+    background-color: #fa694e;
     color: white;
     border: none;
     font-weight: bold;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 
 .landing .container .centerDiv button:hover {
@@ -181,6 +181,281 @@ body {
     background-color: #a43521;
 }
 
+@media (max-width: 767px) {
+    .landing .container .centerDiv h1 {
+        font-size: 60px;
+    }
 
+    .landing .container .centerDiv p {
+        font-size: 25px;
+    }
+}
 
 /* End Landing */
+
+/* Starting Services */
+
+.services .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.services .container .service {
+    width: 330px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.services .container .service h2 {
+    font-size: 30px;
+}
+
+.services .container .service p {
+    font-size: 25px;   
+}
+
+.services .container .service i {
+    color: #fa694e;
+    font-size: 70px;
+}
+
+/* Ending Services */
+
+/* Starting stories */
+
+.stories {
+    position: relative;
+    background-color: #f0ebeb;
+    margin: 100px 0;
+}
+
+.stories .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.stories .container .header {
+    text-align: center;
+    
+}
+
+.stories .container .body {
+    margin-top: 300px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.stories .container .body a {
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.stories .container .body .card .head {
+    height: 50%;
+    background-color: rgb(189, 187, 187);
+    border-radius: 20px 20px 0 0;
+    margin: 0;
+}
+
+.stories .container .body .card .head img {
+    width: 180px;
+}
+
+.stories .container .header h1 {
+    font-size: 70px;
+    color: #676464;
+}
+
+.stories .container .header p {
+    font-size: 25px;
+}
+
+.stories .container .body .card p {
+    color: gray;
+}
+
+.stories .container.body .card h1 {
+    color: gray;
+    margin: 0;
+    padding: 0;
+}
+
+.stories .container .body .books {
+    width: 300px;
+    height: 400px;
+}
+
+.stories .container .body .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.stories .container .body .cards .card {
+    width: 250px;
+    margin: 10px;
+}
+
+.stories .container .body .cards .card .foot {
+    background-color: aliceblue;
+    margin: 0;
+    height: 150px;
+    border-radius:  0 0 20px 20px;
+}
+
+.stories .container .body .books ::before {
+    content: "";
+    width: 30%;
+    height: 100%;
+    background-color: #bd0000;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+}
+
+@media (max-width: 900px) {
+    .books {
+        display: none;
+    }
+
+    .card {
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .cards {
+        margin-top: 50px;
+    }
+}
+
+/* Ending Stories */
+
+/* starting cotact */
+
+.head {
+    text-align: center;
+}
+
+.con {
+    width: 30%;
+    text-align: center;
+    position: absolute;
+    left: 0;
+}
+
+.contact .container .head h1 {
+    font-size: 80px;
+    color: #e1d9d9ea;
+}
+
+.contact .container .body {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact .container .body .form {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+}
+
+.contact .container .body .form input, textarea {
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 20px;
+    background-color: #ececec;
+    outline-color: var(--secondary-color);
+    transition: 1s;
+}
+
+.contact .container .body .form .name, .Email {
+    width: 350px;
+    height: 70px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.contact .container .body .form .subject {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.contact .container .body .form .message {
+    width: 100%;
+    height: 300px;
+}
+
+.contact .container .form :focus {
+    border: solid 2px #a43521;
+}
+
+.contact .container .form button {
+    width: 100%;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    background-color: #fa694e;
+    bottom: 0;
+    margin-top: 20px;
+    transition: 0.7s;
+}
+
+.contact .container .form button:hover {
+    background-color: #bd0000;
+}
+
+.contact .container .body .con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.contact .container .body .con .address, .email, .phone {
+    margin: 10px;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+.contact .container .body .con .address, .email, .phone h1 {
+    font-size: 15px;
+    color: #292828;
+}
+
+/* ending contact */
+
+/* Starting footer */
+
+.footer {
+    background-color: #bd0000;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .container h1 {
+    font-size: 20px;
+}
+
+.footer i {
+    font-size: 30px;
+    padding: 5px;
+}
+
+/* Ending footer */
