@@ -12,202 +12,190 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <!-- Start Header -->
-
+    <!-- header -->
     <div class="header">
         <div class="container">
             <img src="image/logo.png" alt="">
-            <div class="menuDiv">
-                <div class="iconDiv">
-                    <div class="iconLine"></div>
-                    <div class="iconLine" id="centerLine"></div>
-                    <div class="iconLine"></div>
-                </div>
-                <ul>
-                    <li>Home</li>
+            <div class="menuBar">
+                <div class="barItem"></div>
+                <div class="middleBar"></div>
+                <div class="barItem"></div>
+                <ul class="menuList">
+                    <li><a href="#home">Home</a></li>
                     <div class="divider"></div>
-                    <li>Services</li>
+                    <li><a href="#services">Services</a></li>
                     <div class="divider"></div>
-                    <li>Stories</li>
-                    <div class="divider"></div>
-                    <li>Contact</li>
+                    <li><a href="#stories">Stories</a></li>
+                    <div class="divider"></div> 
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </div>
-
-    <!-- End Header -->
-
-    <!-- Start Landing -->
-
-    <div class="landing">
+    <!-- header -->
+    <!-- Landing -->
+    <div id="home" class="landing">
         <div class="container">
-            <div class="centerDiv">
+            <div class="mainText">
                 <h1>tatbeqey</h1>
                 <p>The best programming service platform</p>
                 <button>Get in Touch</button>
             </div>
         </div>
     </div>
-
-    <!-- End Landing -->
-
-    <!-- Start Services  -->
-
-    <div class="services">
+    <!-- Landing -->
+    <!-- Services -->
+    <div id="services" class="services">
         <div class="container">
             <div class="service">
                 <i class="bi bi-magic"></i>
-                <h2>Code Dreams into Action</h2>
+                <h3>Code Dreams into Action</h3>
                 <p>We specialize in turning your dreams into functional reality through our programming services.</p>
             </div>
             <div class="service">
                 <i class="bi bi-gem"></i>
-                <h2>Quality Beyond Measure</h2>
+                <h3>Quality Beyond Measure</h3>
                 <p>Expect robust code, rigorous testing, and seamless integration. Your success is our priority, let's build something exceptional together! 💻🚀</p>
             </div>
             <div class="service">
                 <i class="bi bi-graph-up-arrow"></i>
-                <h2>Boost Your Success</h2>
+                <h3>Boost Your Success</h3>
                 <p>From custom web apps to streamlined processes, we elevate your ROI and customer satisfaction. Let's transform your vision into code!</p>
             </div>
         </div>
     </div>
-
-    <!-- Endig Services -->
-
-    <!-- Start Stories -->
-
-    <div class="stories">
+    <!-- Services -->
+    <!-- Stories -->
+    <div id="stories" class="stories">
         <div class="container">
-            <div class="header">
-                <h1>Success Stories</h1>
-                <p>We do awesome work, check some of success stories so far</p>
-            </div>
-            <div class="body">
-                <img src="image/books.png" alt="">
+            <h3 class="specialTitle">Success Stories</h3>
+            <p>We do awesome work, check some of success stories so far</p>
+            <div class="content">
                 <div class="cards">
-                    <a href="#">
-                        <div class="card">
-                            <div class="head">
-                                <img src="image/egyquran.png" alt="">
+                        <div class="card" title="Live radio quran. Available on AppStore & Play Store">
+                        <div class="imgDiv">
+                            <img src="image/egyquran.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h1>إذاعات القرآن بث مباشر</h1>
+                            <p>Live radio quran. Available on AppStore & Play Store</p>
+                        </div>
+                    </div>
+                    </a>
+                        <div class="card" title="Drug dose calculator App. Available on Play Store">
+                        <div class="imgDiv">
+                            <img src="image/dosecalc.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h1>Dose Calculator</h1>
+                            <p>Drug dose calculator App. Available on Play Store</p> 
+                        </div>
+                    </div>
+                    </a>
+                        <div class="card" title="Online pharmacy App. Available on Play Store">
+                        <div class="imgDiv">
+                            <img src="image/ghoniem.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h1>Ghoniem Pharmacy</h1>
+                            <p>Online pharmacy App. Available on Play Store</p> 
+                        </div>
+                    </div>
+                    </a>
+                        <div class="card" title="Hijama Clinic App. Available on Play Store">
+                        <div class="imgDiv">
+                            <img src="image/hojamah.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h1>Hojamat Al-Riyadh</h1>
+                            <p>Hijama Clinic App. Available on Play Store</p> 
+                        </div>
+                    </div>
+                    </a>
+
+                        <div class="card" title="Online Store App. Available on Play Store">
+                            <div class="imgDiv">
+                               <img src="image/smarttech.png" alt="">
                             </div>
-                            <div class="foot">
-                                <h1>إذاعات القرآن بث مباشر</h1>
-                                <p>Live radio quran. Available on AppStore &amp; Play Store</p>
+                            <div class="details">
+                                <h1>Smart Tech</h1>
+                                <p>Online Store App. Available on Play Store</p> 
                             </div>
                         </div>
                     </a>
-                    <a href="#">
-                        <div class="card">
-                            <div class="head">
+                        <div class="card" title="Free donations App. Available on Play Store">
+                            <div class="imgDiv">
                                 <img src="image/freedonations.png" alt="">
                             </div>
-                            <div class="foot">
+                            <div class="details">
                                 <h1>Free Donations</h1>
-                               <p>Free donations App. Available on Play Store</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="card">
-                            <div class="head">
-                                <img src="image/dosecalc.png" alt="">
-                            </div>
-                            <div class="foot">
-                                <h1>Dose Calculator</h1>
-                                <p>Drug dose calculator App. Available on Play Store</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="card">
-                            <div class="head">
-                             <img src="image/ghoniem.png" alt="">
-                            </div>
-                            <div class="foot">
-                                <h1>Ghoniem Pharmacy</h1>
-                                <p>Online pharmacy App. Available on Play Store</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="card">
-                            <div class="head">
-                                <img src="image/hojamah.png" alt="">
-                            </div>
-                            <div class="foot">
-                                <h1>Hojamat Al-Riyadh</h1>
-                                <p>Hijama Clinic App. Available on Play Store</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="card">
-                            <div class="head">
-                                <img src="image/smarttech.png" alt="">
-                            </div>
-                            <div class="foot">
-                                <h1>Smart Tech</h1>
-                                <p>Online Store App. Available on Play Store</p>
+                                <p>Free donations App. Available on Play Store</p> 
                             </div>
                         </div>
                     </a>
                 </div>
-               
+                <div class="image">
+                   <img src="image/books.png" alt=""> 
+                </div>
             </div>
         </div>
     </div>
-
-    <!-- Ending Stories -->
-
-    <!-- Starting Contact  -->
-
-    <div class="contact">
+    <!-- Stories -->
+    <!-- Contact -->
+    <div id="contact" class="contact">
         <div class="container">
-            <h1>Contact US</h1>
-            <div class="body">
-                <div class="form">
-                    <input type="text" placeholder="Your Name" required class="name">
-                    <input type="email" placeholder="Your Email" required class="Email">
-                    <input type="text" placeholder="subject" class="subject">
-                    <input type="text" placeholder="Type Your Message" required class="message">
-                    <div class="button"><button>Send</button></div>
+            <h3 class="specialTitle">Contact Us</h3>
+            <div class="contents">
+                <div class="details">
+                    <h3>Address</h3>
+                    <p>31722, Qutur, Gharbia <br>Egypt</p>
+                    <br>
+                    <h3>Email</h3>
+                    <p>ma1876597@gmail.com</p>
+                    <br>
+                    <h3>Phone</h3>
+                    <p>+2 01154527560</p>
                 </div>
-                <div class="con">
-                    <div class="address">
-                        <h2>Address</h2>
-                        <p>Segen Elcom , Qtor ,Elgarbeya</p>
+                <div class="form">
+                    <div class="firstRow">
+                        <input type="text" placeholder="Your Name">
+                        <input type="email" placeholder="Your Mail">
                     </div>
-                    <div class="email">
-                        <h2>Email</h2>
-                        <p></p>
-                    </div>
-                    <div class="phone">
-                        <h2>Phone</h2>
-                        <p>011545227560</p>
-                    </div>
+                    <input type="text" placeholder="Subject">
+                    <br>
+                    <textarea placeholder="Type Message Here..." cols="30" rows="10"></textarea>
+                    <br>
+                    <button>SEND</button>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Ending Contact -->
-
-    <!-- Starting footer -->
-
+    <!-- Contact -->
+    <!-- Footer -->
     <div class="footer">
         <div class="container">
-            <h1>Copyright© 2024 tatbeqey, All Rights Reserved</h1>
-            <div class="icon">
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-whatsapp"></i></a>
-                <a href=""><i class="bi bi-telegram"></i></a>
+            <p>Copyright&copy; 2024 tatbeqey, All Rights Reserved</p>
+            <div class="social">
+                <div class="icon">
+                    <a target="_blank" href="https://facebook.com/tatbeqey">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    
+                </div>
+                <div class="icon">
+                    <a target="_blank" href="https://wa.me/+201010133967">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    
+                </div>
+                <div class="icon">
+                    <a target="_blank" href="https://t.me/drahmedgabr">
+                        <i class="bi bi-telegram"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-
-    <!-- ending footer -->
+    <!-- Footer -->
 </body>
 </html>
