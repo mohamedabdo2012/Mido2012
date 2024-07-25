@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,149 +11,178 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- header -->
+    
+    <!-- Start Header -->
+
     <div class="header">
         <div class="container">
             <img src="image/logo.png" alt="">
-            <div class="menuBar">
-                <div class="barItem"></div>
-                <div class="middleBar"></div>
-                <div class="barItem"></div>
-                <ul class="menuList">
-                    <li><a href="#home">Home</a></li>
+            <div class="menuDiv">
+                <div class="iconDiv">
+                    <div class="iconLine"></div>
+                    <div class="iconLine" id="centerLine"></div>
+                    <div class="iconLine"></div>
+                </div>
+                <ul>
+                    <a href="#landingDiv">
+                        <li>Home</li>
+                    </a>
                     <div class="divider"></div>
-                    <li><a href="#services">Services</a></li>
+                    <a href="#servicesDiv">
+                        <li>Services</li>
+                    </a>
                     <div class="divider"></div>
-                    <li><a href="#stories">Stories</a></li>
-                    <div class="divider"></div> 
-                    <li><a href="#contact">Contact</a></li>
+                    <a href="#storiesDiv">
+                        <li>Stories</li>
+                    </a>
+                    <div class="divider"></div>
+                    <a href="#contactDiv">
+                        <li>Contact</li>
+                    </a>
                 </ul>
             </div>
         </div>
     </div>
-    <!-- header -->
-    <!-- Landing -->
-    <div id="home" class="landing">
+
+    <!-- End Header -->
+
+    <!-- Start Landing -->
+
+    <div class="landing" id="landingDiv">
         <div class="container">
-            <div class="mainText">
+            <div class="centerDiv">
                 <h1>tatbeqey</h1>
                 <p>The best programming service platform</p>
-                <button>Get in Touch</button>
+                <a href="#contactDiv">
+                    <button>Get in Touch</button>
+                </a>
             </div>
         </div>
     </div>
-    <!-- Landing -->
-    <!-- Services -->
-    <div id="services" class="services">
+
+    <!-- End Landing -->
+
+    <!-- Start Services -->
+
+    <div class="services" id="servicesDiv">
         <div class="container">
             <div class="service">
                 <i class="bi bi-magic"></i>
-                <h3>Code Dreams into Action</h3>
+                <h2>Code Dreams into Action</h2>
                 <p>We specialize in turning your dreams into functional reality through our programming services.</p>
             </div>
             <div class="service">
                 <i class="bi bi-gem"></i>
-                <h3>Quality Beyond Measure</h3>
+                <h2>Quality Beyond Measure</h2>
                 <p>Expect robust code, rigorous testing, and seamless integration. Your success is our priority, let's build something exceptional together! 💻🚀</p>
             </div>
             <div class="service">
                 <i class="bi bi-graph-up-arrow"></i>
-                <h3>Boost Your Success</h3>
+                <h2>Boost Your Success</h2>
                 <p>From custom web apps to streamlined processes, we elevate your ROI and customer satisfaction. Let's transform your vision into code!</p>
             </div>
         </div>
     </div>
-    <!-- Services -->
-    <!-- Stories -->
-    <div id="stories" class="stories">
-        <div class="container">
-            <h3 class="specialTitle">Success Stories</h3>
-            <p>We do awesome work, check some of success stories so far</p>
-            <div class="content">
-                <div class="cards">
-                        <div class="card" title="Live radio quran. Available on AppStore & Play Store">
-                        <div class="imgDiv">
-                            <img src="image/egyquran.png" alt="">
-                        </div>
-                        <div class="details">
-                            <h1>إذاعات القرآن بث مباشر</h1>
-                            <p>Live radio quran. Available on AppStore & Play Store</p>
-                        </div>
-                    </div>
-                    </a>
-                        <div class="card" title="Drug dose calculator App. Available on Play Store">
-                        <div class="imgDiv">
-                            <img src="image/dosecalc.png" alt="">
-                        </div>
-                        <div class="details">
-                            <h1>Dose Calculator</h1>
-                            <p>Drug dose calculator App. Available on Play Store</p> 
-                        </div>
-                    </div>
-                    </a>
-                        <div class="card" title="Online pharmacy App. Available on Play Store">
-                        <div class="imgDiv">
-                            <img src="image/ghoniem.png" alt="">
-                        </div>
-                        <div class="details">
-                            <h1>Ghoniem Pharmacy</h1>
-                            <p>Online pharmacy App. Available on Play Store</p> 
-                        </div>
-                    </div>
-                    </a>
-                        <div class="card" title="Hijama Clinic App. Available on Play Store">
-                        <div class="imgDiv">
-                            <img src="image/hojamah.png" alt="">
-                        </div>
-                        <div class="details">
-                            <h1>Hojamat Al-Riyadh</h1>
-                            <p>Hijama Clinic App. Available on Play Store</p> 
-                        </div>
-                    </div>
-                    </a>
 
-                        <div class="card" title="Online Store App. Available on Play Store">
-                            <div class="imgDiv">
-                               <img src="image/smarttech.png" alt="">
+    <!-- End Services -->
+
+    <!-- Start Stories -->
+
+    <div class="stories" id="storiesDiv">
+        <div class="container">
+            <h2>Success Stories</h2>
+            <p id="containerParagraph">We do awesome work, check some of success stories so far</p>
+            <div class="contents">
+                <div class="cards">
+                    <a href="https://play.google.com/store/apps/details?id=online.pharmastars.quraanegypt" target="_blank">
+                        <div class="card">
+                            <div class="cardImg">
+                                <img src="image/egyquran.png" alt="">
                             </div>
-                            <div class="details">
-                                <h1>Smart Tech</h1>
-                                <p>Online Store App. Available on Play Store</p> 
+                            <div class="cardDetails">
+                                <h3>EgyQuran Radio</h3>
+                                <p>Live Radio app for quran streaming</p>
                             </div>
                         </div>
                     </a>
-                        <div class="card" title="Free donations App. Available on Play Store">
-                            <div class="imgDiv">
+                    <a href="https://play.google.com/store/apps/details?id=online.pharmastars.dosecalculator" target="_blank">
+                        <div class="card">
+                            <div class="cardImg">
+                                <img src="image/dosecalc.png" alt="">
+                            </div>
+                            <div class="cardDetails">
+                                <h3>Dose Calculator</h3>
+                                <p>Dose Calculator app for drugs</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.freedonations.free_donations" target="_blank">
+                        <div class="card">
+                            <div class="cardImg">
                                 <img src="image/freedonations.png" alt="">
                             </div>
-                            <div class="details">
-                                <h1>Free Donations</h1>
-                                <p>Free donations App. Available on Play Store</p> 
+                            <div class="cardDetails">
+                                <h3>Free Donations</h3>
+                                <p>Free donations app</p>
+                            </div>
+                        </div>
+                    </a>     
+                    <a href="https://play.google.com/store/apps/details?id=com.tatbeqey.android.smartTech" target="_blank">
+                        <div class="card">
+                            <div class="cardImg">
+                                <img src="image/smarttech.png" alt="">
+                            </div>
+                            <div class="cardDetails">
+                                <h3>Smart Tech</h3>
+                                <p>Smart Tech App</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.tatbeqey.android.mypharmacy_ghoniempharmacy" target="_blank">
+                        <div class="card">
+                            <div class="cardImg">
+                                <img src="image/ghoniem.png" alt="">
+                            </div>
+                            <div class="cardDetails">
+                                <h3>Ghoniem Pharmacy</h3>
+                                <p>Ghoniem Pharmacy App</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=site.tatbeqak.hojamah" target="_blank">
+                        <div class="card">
+                            <div class="cardImg">
+                                <img src="image/hojamah.png" alt="">
+                            </div>
+                            <div class="cardDetails">
+                                <h3>Hojamah App</h3>
+                                <p>Hojamah Purchasing App</p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="image">
-                   <img src="image/books.png" alt=""> 
+                <div class="imgDiv">
+                    <img src="images/books.png" alt="">
                 </div>
             </div>
         </div>
     </div>
-    <!-- Stories -->
-    <!-- Contact -->
-    <div id="contact" class="contact">
+
+    <!-- End Stories -->
+
+    <!-- Start Contact -->
+
+    <div class="contact" id="contactDiv">
         <div class="container">
-            <h3 class="specialTitle">Contact Us</h3>
+            <h1>Contact Us</h1>
             <div class="contents">
                 <div class="details">
                     <h3>Address</h3>
-                    <p>31722, Qutur, Gharbia <br>Egypt</p>
-                    <br>
+                    <p>31722, Qutur, Gharbia, Egypt</p>
                     <h3>Email</h3>
-                    <p>ma1876597@gmail.com</p>
-                    <br>
+                    <p>ahmadal4ever@gmail.com</p>
                     <h3>Phone</h3>
-                    <p>+2 01154527560</p>
+                    <p>+2 01010 13 3967</p>
                 </div>
                 <div class="form">
                     <div class="firstRow">
@@ -163,39 +191,42 @@
                     </div>
                     <input type="text" placeholder="Subject">
                     <br>
-                    <textarea placeholder="Type Message Here..." cols="30" rows="10"></textarea>
+                    <textarea name="" id="" rows="10" placeholder="Type Message Here..."></textarea>
                     <br>
                     <button>SEND</button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Contact -->
-    <!-- Footer -->
+
+    <!-- End Contact -->
+
+    <!-- Start Footer -->
+
     <div class="footer">
         <div class="container">
             <p>Copyright&copy; 2024 tatbeqey, All Rights Reserved</p>
-            <div class="social">
-                <div class="icon">
-                    <a target="_blank" href="https://facebook.com/tatbeqey">
+            <div class="iconsDiv">
+                <a href="https://facebook.com/tatbeqey" target="_blank">
+                    <div class="icon">
                         <i class="bi bi-facebook"></i>
-                    </a>
-                    
-                </div>
-                <div class="icon">
-                    <a target="_blank" href="https://wa.me/+201010133967">
+                    </div>
+                </a>
+                <a href="https://wa.me/+201010133967" target="_blank">
+                    <div class="icon">
                         <i class="bi bi-whatsapp"></i>
-                    </a>
-                    
-                </div>
-                <div class="icon">
-                    <a target="_blank" href="https://t.me/drahmedgabr">
+                    </div>
+                </a>
+                <a href="https://t.me/drahmedgabr" target="_blank">
+                    <div class="icon">
                         <i class="bi bi-telegram"></i>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
-    <!-- Footer -->
+
+    <!-- End Footer -->
+
 </body>
 </html>
